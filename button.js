@@ -48,6 +48,6 @@ class DataLogger{
       }
   }
   
-      document.addEventListener('DOMContentLoaded', () => {
-      new DataLogger('logButton', 'idContainer', 'clearButton', 'logCount'); 
-      })
+  document.addEventListener('DOMContentLoaded', () => {
+    new DataLogger('logButton', 'idContainer', 'clearButton', 'logCount'); 
+    })
