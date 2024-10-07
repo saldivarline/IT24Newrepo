@@ -35,7 +35,7 @@ const myMap = new LeafletMap('map', [8.578109, 124.927519], 18);
 
 myMap.addMarker(8.577188,124.928062, 'Balay ni lalang');
 myMap.addMarker(8.577390,124.928073, 'Adlawan store');
-myMap.addMarker(8.578753,124.928041, 'Domo store');
+myMap.addMarker(8.578753,124.928041, 'Domo stor');
 
 
 
