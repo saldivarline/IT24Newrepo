@@ -123,3 +123,7 @@ myMap.addMarker(8.578753,124.928041, 'Domo store');
 
 myMap.loadMarkersFromJson('applet.json');
 
+document.addEventListener('DOMContentLoaded', () => {
+    Mymap.displayLogCount();
+    Mymap.loadMarkersFromJson('applet.json');
+});
