@@ -99,6 +99,18 @@ class LeafletMap {
     this.attendanceCountbnl++; 
     this.updateLogDisplay();
    }
+
+   updateLogDisplay() {
+    this.idContainer.innerHTML = ''; 
+    this.loggedData.forEach(data => {
+        const logItem = document.createElement('div');
+        logItem.className = 'log-item';
+        this.idContainer.appendChild(logItem);
+    });
+    this.displayLogCount();
+}
+
+}
 const myMap = new LeafletMap('map', [8.578109, 124.927519], 18);
 
 
