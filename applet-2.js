@@ -81,6 +81,24 @@ class LeafletMap {
         this.logCount1Element.innerHTML = `AS Building Attendance: ${this.attendanceCountAS}`;
         this.logCount2Element.innerHTML = `DS Laboratory Attendance: ${this.attendanceCountDS}`;
    }
+
+   dataBNL() {
+    this.addMarker(8.577188,124.928062, 'BNL');
+    this.attendanceCountbnl++; 
+    this.updateLogDisplay();
+}
+
+   dataAS() {
+    this.addMarker(8.577390,124.928073, 'AS');
+    this.attendanceCountbnl++; 
+    this.updateLogDisplay();
+   }
+    
+   dataDS() {
+    this.addMarker(8.578753,124.928041, 'DS');
+    this.attendanceCountbnl++; 
+    this.updateLogDisplay();
+   }
 const myMap = new LeafletMap('map', [8.578109, 124.927519], 18);
 
 
