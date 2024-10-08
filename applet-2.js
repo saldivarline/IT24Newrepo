@@ -76,7 +76,11 @@ class LeafletMap {
         this.updateLogDisplay();
     }
 
-
+    displayLogCount() {      
+        this.logCountElement.innerHTML = `BNL Attendance: ${this.attendanceCountBNL}`;
+        this.logCount1Element.innerHTML = `AS Building Attendance: ${this.attendanceCountAS}`;
+        this.logCount2Element.innerHTML = `DS Laboratory Attendance: ${this.attendanceCountDS}`;
+   }
 const myMap = new LeafletMap('map', [8.578109, 124.927519], 18);
 
 
