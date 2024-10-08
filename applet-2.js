@@ -24,6 +24,10 @@ class LeafletMap {
         this.idContainer = document.getElementById('logContainer');
 
       
+        this.btn.addEventListener('click', () => this.dataBNL());
+        this.btn1.addEventListener('click', () => this.dataAS());
+        this.btn2.addEventListener('click', () => this.dataDS());
+        this.btnclear.addEventListener('click', () => this.clearLogs());
 
     }
 
