@@ -43,7 +43,7 @@ class LeafletMap {
         const marker = L.marker([lat, lng]).addTo(this.map);
         marker.bindPopup(message);
     }
-    
+
     updateMarkerPopup(marker, message) {
         const count = this.markerCounts[message];
         marker.bindPopup(`${message}<br>Attendance logs: ${count}`).openPopup();
@@ -58,8 +58,24 @@ class LeafletMap {
                 });
             })
             .catch(error => console.error('Error loading markers:', error));
+        }
+        
+    clearLogs(){
+        this.attendanceCountBNL = 0;
+        this.attendanceCountAS = 0;
+        this.attendanceCountDS = 0;
+
+        this.loggedData = [];
+        this.markerCounts = {}; 
+        this.markers.forEach(marker => {
+            const message = marker.getPopup().getContent().split('<br>')[0]; 
+            this.markerCounts[message] = 0;
+            this.updateMarkerPopup(marker, message); 
+        });
+
+        this.updateLogDisplay();
     }
-}
+
 
 const myMap = new LeafletMap('map', [8.578109, 124.927519], 18);
 
