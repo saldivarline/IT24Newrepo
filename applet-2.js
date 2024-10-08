@@ -43,6 +43,11 @@ class LeafletMap {
         const marker = L.marker([lat, lng]).addTo(this.map);
         marker.bindPopup(message);
     }
+    
+    updateMarkerPopup(marker, message) {
+        const count = this.markerCounts[message];
+        marker.bindPopup(`${message}<br>Attendance logs: ${count}`).openPopup();
+    }
 
     loadMarkersFromJson(url) {
         fetch(url)
