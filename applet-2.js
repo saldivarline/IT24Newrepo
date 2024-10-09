@@ -77,26 +77,26 @@ class LeafletMap {
     }
 
     displayLogCount() {      
-        this.logCountElement.innerHTML = `BNL Attendance: ${this.attendanceCountBNL}`;
-        this.logCount1Element.innerHTML = `AS Building Attendance: ${this.attendanceCountAS}`;
-        this.logCount2Element.innerHTML = `DS Laboratory Attendance: ${this.attendanceCountDS}`;
+        this.logCountElement.innerHTML = `Balay Ni Lalang Attendance: ${this.attendanceCountBNL}`;
+        this.logCount1Element.innerHTML = `Adlawan Store Attendance: ${this.attendanceCountAS}`;
+        this.logCount2Element.innerHTML = `Domo Store Attendance: ${this.attendanceCountDS}`;
    }
 
    dataBNL() {
-    this.addMarker(8.577188,124.928062, 'BNL');
-    this.attendanceCountbnl++; 
+    this.addMarker(8.577188,124.928062, 'Balay Ni Lalang');
+    this.attendanceCountBNL++; 
     this.updateLogDisplay();
 }
 
    dataAS() {
-    this.addMarker(8.577390,124.928073, 'AS');
-    this.attendanceCountbnl++; 
+    this.addMarker(8.577390,124.928073, 'Adlawan Store');
+    this.attendanceCountAS++; 
     this.updateLogDisplay();
    }
     
    dataDS() {
-    this.addMarker(8.578753,124.928041, 'DS');
-    this.attendanceCountbnl++; 
+    this.addMarker(8.578753,124.928041, 'Domo Store');
+    this.attendanceCountDS++; 
     this.updateLogDisplay();
    }
 
@@ -124,6 +124,6 @@ myMap.addMarker(8.578753,124.928041, 'Domo store');
 myMap.loadMarkersFromJson('applet.json');
 
 document.addEventListener('DOMContentLoaded', () => {
-    Mymap.displayLogCount();
-    Mymap.loadMarkersFromJson('applet.json');
+    myMap.displayLogCount();
+    myMap.loadMarkersFromJson('applet.json');
 });
