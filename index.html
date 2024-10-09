@@ -8,19 +8,19 @@
     <title>Document</title>
     <style>
         body{
-            background-color: pink;
-            color: pink;
+            background-color: gainsboro;
+            color: gainsboro;
         }
         .container{
-               background-color: pink;
-               color: pink;
+               background-color: gainsboro;
+               color: gainsboro;
                margin-top: 5rem;
 
         }
     </style>
 </head>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-image: url('https://wallpapers.com/images/hd/forest-background-ly1au848cvdbs5s2.jpg'); background-size: cover;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-image: url('https://imgs.search.brave.com/VqWbuQm5tzSAf569XzYZUqRkl9krrL6tjJzKkKL6vdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzA5Lzdi/L2E3LzA5N2JhNzNm/ODAyMmRiN2RhYjQz/OGEyYWQ2Yzg3MGI3/LmpwZw'); background-size: cover;">
     <div class="container-fluid">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="/0137bfdb736a4361b8acd9d3698e228a.jpg" class="card-img-top" alt="...">
+                    <img src="/assest/dogscaping-main.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><a href="#" class="btn btn-primary">Card 1</a>
@@ -72,7 +72,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="/0137bfdb736a4361b8acd9d3698e228a.jpg" class="card-img-top" alt="...">
+                    <img src="/assest/horizontal-shot-field-everlasting-flowers-with-brown-dog-istria-croatia_181624-24267.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><a href="#" class="btn btn-primary">Card 2</a>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="/0137bfdb736a4361b8acd9d3698e228a.jpg" class="card-img-top" alt="...">
+                    <img src="/assest/depicting-english-shepherd-dog-crossroads-with-sunset-sky-grassy-field_963338-29309.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><a href="#" class="btn btn-primary">Card 3</a>
@@ -92,4 +92,17 @@
     </div>
     
 </body>
+
+<script>
+    function search(event) {
+        event.preventDefault(); 
+        const query = document.getElementById('query').value;
+        if (query) {
+            
+            alert(`Searching for: ${query}`);
+        } else {
+            alert('Please enter a search term.');
+        }
+    }
+</script>
 </html>
