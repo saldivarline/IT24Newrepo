@@ -10,6 +10,14 @@
         "student_id": 2,
         "student_name": "Harry Villa",
         "student_program": "BS-Criminology",
-      
+        "student_enrolled_date": "2023-06-16"
+      },
+      {
+        "student_id": 3,
+        "student_name": "Luke Ubalde",
+        "student_program": "Dentistry",
+        "student_enrolled_date": "2023-06-27"
+
+
 }
 ]
