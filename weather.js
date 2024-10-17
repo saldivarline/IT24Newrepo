@@ -79,8 +79,10 @@ class WeatherService extends WeatherApp {
                     }
                 },
                 () => {
+                    alert('Unable to retrieve your location. Please allow location access.');
                 }
-        
+            );
+        } else {
+            alert('Geolocation is not supported by this browser.');
         }
-}
-
+    }
