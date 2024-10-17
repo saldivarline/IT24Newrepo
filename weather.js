@@ -32,3 +32,13 @@ class WeatherApp{
 
         this.weatherCard.style.display = 'block';
 }
+
+}
+
+class WeatherService extends WeatherApp {
+
+    constructor() {
+        super();
+        this.apiKey = '';
+    }
+}
